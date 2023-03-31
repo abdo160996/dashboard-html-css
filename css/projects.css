@@ -1,0 +1,87 @@
+
+@import url("./global.css");
+/*Start zero-dash*/
+.dash {
+  position: relative;
+}
+.dash::after {
+  content: "21/09/2022";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: .5;
+}
+.dash .imgs img {
+  width: 40px;
+  margin-right: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.15s linear;
+  -webkit-transition: 0.15s linear;
+  -moz-transition: 0.15s linear;
+  -ms-transition: 0.15s linear;
+  -o-transition: 0.15s linear;
+}
+.dash .imgs img:hover {
+  transform: translateX(-2px);
+  -webkit-transform: translateX(-2px);
+  -moz-transform: translateX(-2px);
+  -ms-transform: translateX(-2px);
+  -o-transform: translateX(-2px);
+}
+.dash .tools {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+  font-size: 14px;
+}
+.dash .tools span {
+  background-color: var(--light-dark-bg);
+  padding: 1px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 5px;
+}
+@media (max-width:767px) {
+  .dash .tools span {
+    margin-left: 2px;
+  }
+}
+.dash .progress {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.dash .progress .bar {
+   border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+  background-image: linear-gradient(to right, var(--text-color) 40%, var(--back-color) 40%);
+  height: 5px;
+  width: 50%;
+}
+.dash .progress .budget {
+  opacity: .5;
+}
+.dash:nth-child(2) .progress .bar {
+background-image: linear-gradient(to right, var(--text-color) 50%, var(--back-color) 50%);
+
+}
+.dash:nth-child(3) .progress .bar {
+background-image: linear-gradient(to right, var(--text-color) 30%, var(--back-color) 30%);
+
+}
+.dash:nth-child(5) .progress .bar {
+background-image: linear-gradient(to right, var(--text-color) 70%, var(--back-color) 70%);
+
+}
+/*End zero-dash*/

@@ -1,0 +1,43 @@
+/*Start Global Rules*/
+@import url('./wrapper.css');
+:root {
+    --back-color: #dfecf3;
+    --text-color: #4361ee;
+    --third-color: #d90429;
+    --forth-color: #a8dadc;
+    --light-dark-bg : #f5f5f5;
+    --light-dark-txt:#1d1d1d ;
+    --wrapper-bg : #f1f1f1;
+  }
+  
+  @media(prefers-color-scheme:dark){
+  .dark {
+    --light-dark-bg : #3b3b3b;
+    --light-dark-txt:#fffdfd ;
+    --wrapper-bg :#272727;
+  }
+  }
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .active {
+   color: #4361ee;
+  }
+   hr {
+   
+    color: #edf2f42d
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Cairo", sans-serif;
+  }
+  .widget p {
+    opacity: 0.5;
+  }
+  /*End Global rules*/

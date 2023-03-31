@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <title>Dashboard</title>
+    <!-- Settings Page stylesheet-->
+    <link rel="stylesheet" href="css/settings.css" />
+    <!-- Render All Elements -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body   class="dark">
+    <div class="wrapper">
+      <aside class="side">
+        <div class="logo">
+          <h3>ElZero</h3>
+          <span></span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-dashboard"></i
+              ><span class="a-text hide-mobile"> Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="settings.html"
+              ><i class="fa-solid fa-gear active fa-fw"></i
+              ><span class="a-text hide-mobile"> Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="profile.html" 
+              ><i class="fa-solid fa-user fa-fw"></i
+              ><span class="a-text hide-mobile"> Profile</span></a
+            >
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fa-solid fa-suitcase fa-fw"></i
+              ><span class="a-text hide-mobile">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="courses.html"
+              ><i class="fa-solid fa-graduation-cap fa-fw"></i
+              ><span class="a-text hide-mobile"> Courses</span></a
+            >
+          </li>
+          <li>
+            <a href="friends.html"
+              ><i class="fa-solid fa-user-tie fa-fw"></i
+              ><span class="a-text hide-mobile">Friends</span></a
+            >
+          </li>
+          <li>
+            <a href="files.html"
+              ><i class="fa-solid fa-file fa-fw"></i
+              ><span class="a-text hide-mobile"> Files</span></a
+            >
+          </li>
+          <li>
+            <a href="plans.html"
+              ><i class="fa-solid fa-dollar fa-fw"></i
+              ><span class="a-text hide-mobile">Plans</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <div class="container">
+        <nav>
+          <div class="search-btn">
+            <input
+              type="search"
+              name="search"
+              placeholder=" Search with Keyword"
+              id="search"
+            />
+          </div>
+          <div class="icons">
+            <ul>
+              <li>
+                <a href="#notify"><i class="fa-solid fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="profile"><i class="fa-solid fa-user-tie"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="headline">
+          <h2>Settings</h2>
+        </div>
+        <div class="widgets">
+          <!-- Start Site Control -->
+          <div class="widget control">
+            <h3>Site Control</h3>
+            <p>Control The Website if There is A maintenance</p>
+            <div class="web-control">
+              <div class="control-text">
+                <span>Website Control</span>
+                <p>Open/Close Website and type a reason</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <textarea
+              name="message"
+              placeholder="Reason to open/close website"
+              id="message"
+            ></textarea>
+          </div>
+          <!-- End Site Control widget -->
+
+          <!-- Start General info widget -->
+          <div class="widget g-info">
+            <h3>General Info</h3>
+            <p>General information about your account</p>
+            <input
+              type="text"
+              placeholder="First name"
+              name="f-name"
+              id="f-name"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              name="l-name"
+              id="l-name"
+            />
+            <input
+              type="text"
+              value="email@yahoo.com"
+              placeholder="Email"
+              name="email"
+              disabled
+              id="email"
+            />
+            <a href="#change">Change</a>
+          </div>
+          <!-- end info widget -->
+
+          <!-- Start s-info widget -->
+          <div class="widget s-info">
+            <h3>Security info</h3>
+            <p>Security information about your account</p>
+            <div class="info">
+              <div class="info-text">
+                <span>Password</span>
+                <p>Last changes on 25/08/2021</p>
+              </div>
+              <a href="#change">Change</a>
+            </div>
+            <div class="info">
+              <div class="info-text">
+                <span>Two Factor authentication</span>
+                <p>Enable/Disable</p>
+              </div>
+              <label for="2f" class="switch">
+                <input type="checkbox" name="2f" id="2f" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="info">
+              <div class="info-text">
+                <span>Devices</span>
+                <p>Check Devices list</p>
+              </div>
+              <a href="#check">Check</a>
+            </div>
+          </div>
+          <!-- End s-info widget -->
+          <!-- Start Social Info-->
+          <div class="widget social-info">
+            <h3>Social Info</h3>
+            <p>Social Media Information</p>
+            <div class="fb">
+              <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="text">
+                <input
+                  type="text"
+                  placeholder="Facebook Username"
+                  name="fb-n"
+                  id="fb-n"
+                />
+              </div>
+            </div>
+            <div class="tw">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="text">
+                <input
+                  type="text"
+                  placeholder="Twitter Username"
+                  name="tw-n"
+                  id="tw-n"
+                />
+              </div>
+            </div>
+            <div class="li">
+              <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="text">
+                <input
+                  type="text"
+                  placeholder="linkedin Username"
+                  name="li-n"
+                  id="li-n"
+                />
+              </div>
+            </div>
+            <div class="yt">
+              <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="text">
+                <input
+                  type="text"
+                  placeholder="Youtube Username"
+                  name="yt-n"
+                  id="yt-n"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- End Social Info-->
+          <!-- Start widgets Control -->
+          <div class="widget w-control">
+            <h3>Widgets Control</h3>
+            <p>Show/Hide Widgets</p>
+            <label for="qd">
+              <input type="checkbox" name="qd" id="qd" />
+              <span>Quick draft</span>
+            </label>
+            <label for="yt">
+              <input type="checkbox" name="yt" id="yt" />
+              <span>Yearly Target</span>
+            </label>
+            <label for="ts">
+              <input type="checkbox" name="ts" id="ts" />
+              <span>Ticket Statistics</span>
+            </label>
+            <label for="ln">
+              <input type="checkbox" name="ln" id="ln" />
+              <span>Latest News</span>
+            </label>
+            <label for="lt">
+              <input type="checkbox" name="lt" id="lt" />
+              <span>Latest Tasks</span>
+            </label>
+            <label for="ti">
+              <input type="checkbox" name="ti" id="ti" />
+              <span>Top search items</span>
+            </label>
+          </div>
+          <!-- End widgets Control -->
+          <!-- Start Backup Manger -->
+          <div class="widget backup">
+            <h3>Backup Manager</h3>
+            <p>Control Backup Time And Location</p>
+            <div class="time">
+              <span class="out">
+                <span class="in"></span>
+              </span>
+              <span>Daily</span>
+            </div>
+            <div class="time">
+              <span class="out">
+                <span class="in"></span>
+              </span>
+              <span>Weekly</span>
+            </div>
+            <div class="time">
+              <span class="out">
+                <span class="in"></span>
+              </span>
+              <span>Monthly</span>
+            </div>
+            <hr />
+            <div class="location">
+              <div class="zero">
+                <i class="fa-solid fa-database"></i>
+                <span>zero</span>
+              </div>
+              <div class="sigma">
+                <i class="fa-solid fa-database"></i>
+                <span>Sigma</span>
+              </div>
+              <div class="mega">
+                <i class="fa-solid fa-database"></i>
+                <span>Mega</span>
+              </div>
+            </div>
+          </div>
+          <!-- End Backup Manger-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

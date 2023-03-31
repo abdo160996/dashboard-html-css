@@ -1,0 +1,106 @@
+@import url("./global.css");
+
+/*Start Course Section*/
+.wrapper .container .widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 435px;
+  gap: 20px;
+}
+.friend h4 {
+  margin: 5px 0;
+}
+.friend {
+  position: relative;
+}
+.friend::before {
+  content: "\f095";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+   opacity: .6;
+  position: absolute;
+  background-color: var(--light-dark-bg);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.friend::after {
+  content: "\f4ad";
+  font-family: "Font Awesome 6 Free";
+  font-weight:900;
+  opacity: .6;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  background-color: var(--light-dark-bg);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.friend .img {
+  text-align: center;
+
+  position: relative;
+}
+.friend .img img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.friend .text.vip {
+  position: relative;
+}
+.friend .text.vip::after {
+  content: "VIP";
+  position: absolute;
+  font-size: 45px;
+  right: 20px;
+  bottom: 20px;
+  color: antiquewhite;
+}
+.friend .text ul li {
+  padding: 10px;
+}
+.friend .text ul li i {
+  margin-right: 10px;
+}
+
+.friend .info {
+  display: flex;
+  justify-content: space-around;
+}
+.friend .info .join span {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.friend .info div.pro a {
+  padding: 2px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.friend .info div.pro a:nth-child(1) {
+  background: #4361ee;
+}
+.friend .info div.pro a:nth-child(2) {
+  background-color: rgb(206, 14, 14);
+}
+.friend i {
+  opacity: .5;
+}
+/*End Course Section*/

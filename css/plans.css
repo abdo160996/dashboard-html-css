@@ -1,0 +1,73 @@
+@import url("./global.css");
+.wrapper .container .widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+  gap: 15px;
+  padding-bottom: 155px;
+}
+@media (max-width:767px) {
+  .wrapper .container .widgets {
+    grid-template-columns: 1fr;
+  }
+}
+.widgets .plan {
+  
+  background-color: #fff;
+  padding: 15px;
+}
+.widgets .plan .title {
+  outline: 3px solid #fff;
+  outline-offset: -10px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #3db16d;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.widgets .plan .title h3 {
+  font-size: 30px;
+  margin:20px 0;
+}
+.widgets .plan .title h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+.widgets .plan .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.widgets .plan a {
+  margin-top: 15px;
+  background-color: #3db16d;
+  color: #fff;
+  padding: 2px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*end plan plan*/
+
+/*Start basic plan*/
+.widgets .basic .title {
+  background-color: #4a63d3;
+}
+.widgets .basic a {
+  
+  background-color: #4a63d3;
+}
+/*End basic plan*/
+
+/*Start premium plan*/
+.widgets .premium .title {
+  background-color: #ccc927;
+}
+.widgets .premium .join {
+  text-align: center;
+  font-size: 20px;
+  background-color: #faf1f1;
+}
+/*End premium plan*/
